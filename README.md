@@ -54,31 +54,57 @@ YÊU CẦU:
 ![6 1 thiết lập khóa ngoại malop-malop(lop)](https://github.com/user-attachments/assets/95f3b119-2950-41bd-9d54-46d1b1b5b70a)
 + tương tự như các ví dụ trên.
 ![6 2  thiết lập khóa ngoại masv-masv(sinhvien)](https://github.com/user-attachments/assets/c950aae1-b0eb-431c-a21f-685f80f49186)
+
 <=>
+
 ![7 tạo bảng giaovien](https://github.com/user-attachments/assets/cfd02708-6233-40af-9446-c130929f01bc)
+
 <=>
+
 ![7 1 thiết lập khóa ngoại mabm-mabm(bomon)](https://github.com/user-attachments/assets/228eef64-3bc4-44f2-92a0-ccb39c7d7b77)
+
 <=>
+
 ![8 tạo bảng bomon](https://github.com/user-attachments/assets/673bc049-ad45-4139-a954-03d9648dacb3)
+
 <=>
+
 ![8 1 thiết lập khóa ngoại makhoa-makhoa(khoa)](https://github.com/user-attachments/assets/10f3df35-2318-4330-a24d-1393e00df1ce)
+
 <=>
+
 ![9 tạo bảng khoa](https://github.com/user-attachments/assets/10c93db1-43a1-4dad-b21f-368bfc7e4edf)
+
 <=>
+
 ![10 tạo bảng monhoc](https://github.com/user-attachments/assets/64de09a4-0628-46b2-a1c3-5b045a3dbf4d)
+
 <=>
+
 ![11 tạo bảng lophp](https://github.com/user-attachments/assets/eb35cd42-1177-4459-8ba6-ced87709a673)
+
 <=>
+
 ![11 1 thiết lập khóa ngoại mamon-mamom(monhoc)](https://github.com/user-attachments/assets/6c74c3f0-b3b6-435d-9d97-7500ca5f266a)
+
 <=>
+
 ![11 2 thiết lập khóa ngoại magv-magv(giaovien)](https://github.com/user-attachments/assets/e8cbb2f1-9f5b-47be-8c8f-46b8d2c76e9f)
+
 <=>
+
 ![12 tạo bảng DKMH](https://github.com/user-attachments/assets/af894c08-d748-4ebf-bee2-1357019eec57)
+
 <=>
+
 ![12 1 thiết lập khóa ngoại malophp-malophp(lophp)](https://github.com/user-attachments/assets/794d8c99-ba30-4910-afaa-e93a4de12bb2)
+
 <=>
+
 ![12 2 thiết lập khóa ngoại masv-masv(sinhvien)](https://github.com/user-attachments/assets/48efa380-6387-42cc-af07-f6ff5757c313)
+
 <=>
+
 
 
 
