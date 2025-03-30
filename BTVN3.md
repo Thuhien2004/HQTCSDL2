@@ -32,28 +32,4 @@ HÌNH THỨC LÀM BÀI:
 6. Tạo diagram mô tả các PK, FK của db. Chụp hình kết quả các bảng có các đường nối 1-->nhiều
 7. upload 2 file  bai_tap_3_schema.sql và bai_tap_3_data.sql lên repository.
 8. nhớ commit để save nội dung file bai_tap3.md
-
-DEADLINE: 23H59 NGÀY 30/03/2025
-
----------------------- hết bài tập 3-------------------------------------------
-Chú ý:
-1. Được phép dùng AI và tham khảo bài của bạn, nhưng phải có sự khác biệt đáng kể.
-2. Nghiêm cấm copy, clone. Tham khảo và copy là 2 việc khác hẳn nhau. Thầy có tool để check!
-3. Bài làm phải có dấu ấn cá nhân (hãy sáng tạo và biết cách bảo vệ mình nếu bạn là bản chính)
-4. Kết quả AI phải phù hợp với yêu cầu, nếu quá sai lệch <=> sv ko đọc => Cấm thi
-5. Nên nhớ: cấm thi là ko có vùng cấm và thầy chưa bao giờ nói đùa về việc cấm thi.
-
-Nhắc lại nội quy học tập:
-SV vi phạm 1 trong các lỗi sau chỉ 1 lần sẽ bị cấm thi: 🚫
-1. Nghỉ ko lý do chính đáng.
-2. Không làm bài tập về nhà.
-3. Vắng bài kiểm tra.
-4. Nói chuyện tự do trong lớp.
-
-Bên cạnh đó, sẽ có điểm thưởng 10đ cho sv :  🎁
-1. Trả lời đúng câu hỏi trên lớp.
-2. Hỏi câu hỏi làm thầy khó trả lời.
-
----NHẮC LẠI THỜI HẠN DEADLINE: 23H59 NGÀY 30/03/2025---
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
