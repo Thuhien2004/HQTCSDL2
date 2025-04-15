@@ -91,8 +91,31 @@ Bước 4: Thực hiện truy vấn các thông tin gồm 4 cột: họ tên gv,
   - Đưa ra mốc thời gian của datetime1, datetime2
   -  Đưa ra cột "Giang vien bận" sử dụng dữ liệu từ bảng ThoiKhoaBieu và từ các trường maGV của cả 2 bảng GiangVien, ThoiKhoaBieu
   -  Khoảng thời gian giáo viên bận là trong khoảng datetime 1- datetime 2. Nên khi lọc dữ liệu sẽ để điều kiện <= datetime1 >=datetime2
-     
-    
+
+CODE BÀI LÀM   
+------------------------------------------------------------------
+SELECT
+    gv.hoTen AS 'Họ Tên GV',
+    mh.tenMon AS 'Môn Dạy',
+    tkb.gioVao AS 'Giờ Vào Lớp',
+    tkb.gioRa AS 'Giờ Ra'
+FROM
+    ThoiKhoaBieu tkb
+JOIN
+    GiangVien gv ON tkb.maGV = gv.maGV
+JOIN
+    MonHoc mh ON tkb.maMon = mh.maMon;
+DECLARE @datetime1 DATETIME = '2025-04-15 06:30:00';
+DECLARE @datetime2 DATETIME = '2025-04-15 12:00:00';
+
+SELECT DISTINCT
+    gv.hoTen AS 'Giảng Viên Bận'
+FROM
+    ThoiKhoaBieu tkb
+JOIN
+    GiangVien gv ON tkb.maGV = gv.maGV
+WHERE
+    tkb.gioVao <= @datetime2 AND tkb.gioRa >= @datetime1;    
 
 
 
