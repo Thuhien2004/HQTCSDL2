@@ -94,28 +94,6 @@ Bước 4: Thực hiện truy vấn các thông tin gồm 4 cột: họ tên gv,
 
 CODE BÀI LÀM   
 ------------------------------------------------------------------
-SELECT
-    gv.hoTen AS 'Họ Tên GV',
-    mh.tenMon AS 'Môn Dạy',
-    tkb.gioVao AS 'Giờ Vào Lớp',
-    tkb.gioRa AS 'Giờ Ra'
-FROM
-    ThoiKhoaBieu tkb
-JOIN
-    GiangVien gv ON tkb.maGV = gv.maGV
-JOIN
-    MonHoc mh ON tkb.maMon = mh.maMon;
-DECLARE @datetime1 DATETIME = '2025-04-15 06:30:00';
-DECLARE @datetime2 DATETIME = '2025-04-15 12:00:00';
-
-SELECT DISTINCT
-    gv.hoTen AS 'Giảng Viên Bận'
-FROM
-    ThoiKhoaBieu tkb
-JOIN
-    GiangVien gv ON tkb.maGV = gv.maGV
-WHERE
-    tkb.gioVao <= @datetime2 AND tkb.gioRa >= @datetime1;    
 
 
 
