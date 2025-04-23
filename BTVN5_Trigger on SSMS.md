@@ -120,7 +120,27 @@ Sau khi nhập dữ liệu cần thiết như maPHONG , maTHIETBI , maQTV ở c�
 
 - Số lần cấu hình trước đó em nhập , và sau khi cập nhập bảng CAUHINHMANG thì SoLanCauHinh ở bảng THIETBI tự động tăng lên thành:
 
-  ![image](https://github.com/user-attachments/assets/8e652a34-0991-4505-9e16-d60b1f572a78)
+ ![image](https://github.com/user-attachments/assets/8e652a34-0991-4505-9e16-d60b1f572a78)
+
+5. Kết luận
+- Vậy từ đó em thấy được trigger có tính năng tự động cập nhật mà không cần dùng đến cập nhật số lần thủ công nữa, tránh được trường hợp quên cập nhật
+- Em nhận thấy nó có tính đồng nhất với dữ liệu, dự liệu thay đổi như nào, nó cũng nắm bắt kịp 
+- Hỗ trợ phân tích và thống kê
+- Truy vấn dữ liệu nhanh hơn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
