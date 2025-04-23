@@ -26,17 +26,23 @@ B. Nội dung Bài tập 05:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                     BÀI LÀM
 PHẦN A: Trình bày đề bài đồ án phân tích thiết kế hệ thống
-1. Tên đề tài: Phân tích thiết kế hệ thống quản lý mạng LAN khu vực kí túc xá trường đại học kỹ thuật công nghiệp 
+1. Tên đề tài: Phân tích thiết kế hệ thống quản lý mạng LAN khu vực kí túc xá trường đại học kỹ thuật công nghiệp
+
 1.1 Mô tả bài toán của đồ án
+
 Hiện nay, khu vực ký túc xá của trường Đại học Kỹ thuật Công nghiệp gồm nhiều tòa nhà dành cho sinh viên nội trú. 
 Nhu cầu truy cập mạng Internet và nội bộ ngày càng tăng cao, trong khi hệ thống mạng hiện tại thiếu sự quản lý tập trung, không đảm bảo tốc độ ổn định, bảo mật kém, khó giám sát và xử lý sự cố.
 Bài toán đặt ra là xây dựng một hệ thống mạng LAN ổn định, có khả năng quản lý các thiết bị mạng và người dùng trong toàn bộ khu ký túc xá. 
 Hệ thống cần hỗ trợ quản lý hạ tầng, địa chỉ IP, cấu hình thiết bị, kiểm soát truy cập và ghi nhận các sự cố – từ đó giúp bộ phận kỹ thuật theo dõi và xử lý hiệu quả hơn.
+
 1.2 Đưa ra yêu cầu bài toán
-* Yêu cầu về chức năng của hệ thống quản lý mạng LAN khu vực kí túc xá trườn
+* Yêu cầu về chức năng của hệ thống quản lý mạng LAN khu vực kí túc xá trường
+  
+![z6532018766565_b20bdd3cb6bb57b88c5baf06df0ccfba](https://github.com/user-attachments/assets/2b5f7b25-0d88-40b7-b9c1-1b6407e7305f)
 
-
-
+- Dựa trên biểu đồ phân cấp chức năng như trên, ta thấy được rõ các yêu cầu của bài toán
+. Ngoài ra vẫn luôn phải đảm bảo các phi chức năng như: tính bảo mật , tính mở rộng , tính liên kết , tính sẵn sàng , tính chính xác và giao diện dễ sử dụng.
+  
 
 
 
