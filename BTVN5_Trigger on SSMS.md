@@ -52,7 +52,8 @@ Hệ thống cần hỗ trợ quản lý hạ tầng, địa chỉ IP, cấu hì
 
 - Tạo bảng BAOCAO với các trường dữ liệu như trên với cá khóa chính: #STT , khóa ngoại: @maPhong ,@mssv , @maTHIETBI
 
-  ![image](https://github.com/user-attachments/assets/3e293004-e410-4c84-9090-5269d1ed0e19)
+ ![image](https://github.com/user-attachments/assets/94bc133e-17b4-4996-bb23-d2f861492b98)
+
 
 - Tạo bảng CAUHINHMANG : #STT,#maCAUHINH , @maQTV,@maTHIETBI
 
@@ -80,15 +81,48 @@ Hệ thống cần hỗ trợ quản lý hạ tầng, địa chỉ IP, cấu hì
 
 Dựa vào Diagram của database QUẢN LÝ MẠNG KTX , ta có thể quan sát đc các liên kết 1 nhiều , và mối quan hệ PK,FK của các bảng với nhau.
 
+PHẦN B 
+1,2: Mong muốn bài toán có thể logic hơn bằng trường phi chuẩn, thì sẽ thêm một trường dữ liệu nữa vào bảng THIETBI
+- Một thiết bị có thể được cấu hình nhiều lần (thể hiện trong bảng CAUHINHMANG).
+- Thay vì mỗi lần muốn biết số lần cấu hình thì phải COUNT(*) trên CAUHINHMANG, việc lưu sẵn số lần cấu hình giúp:
+- Tăng tốc truy vấn.
+- Giám sát hiệu quả thiết bị nhanh chóng.
 
+![image](https://github.com/user-attachments/assets/b9ab04c8-61a7-48ca-907b-05a07e9e2718)
 
+- Và dưới đay là bảng THIETBI sau khi có trường thêm vào
+  
+![image](https://github.com/user-attachments/assets/733c386c-c335-4187-80a9-5f45bfe881a7)
 
+3. Viết trigger cho bảng THIETBI sử dụng trường SoLanCauHinh để có thể tự động cập nhật số lần cấu hình ghi có thêm dữ liệu mới
 
+![image](https://github.com/user-attachments/assets/9f01bd43-67db-411c-a8bd-eaa6b7ca593a)
 
+- CREATE TRIGGER trg_UpdateSoLanCauHinh:	Tạo một trigger tên là trg_UpdateSoLanCauHinh.
+- ON CAUHINHMANG :	Trigger này gắn vào bảng CAUHINHMANG, nghĩa là chỉ hoạt động khi có hành động xảy ra trên bảng này.
+- AFTER INSERT :	Trigger được kích hoạt sau khi có dữ liệu mới được chèn (INSERT) vào bảng CAUHINHMANG.
+- AS BEGIN ... END :	Phần thân trigger – tất cả logic xử lý được đặt trong khối BEGIN ... END.
+- UPDATE THIETBI :	Câu lệnh cập nhật bảng THIETBI.
+- SET SoLanCauHinh = SoLanCauHinh + 1 :	Tăng số lần cấu hình (SoLanCauHinh) thêm 1 đơn vị.
+- FROM THIETBI T INNER JOIN INSERTED I ON T.maTHIETBI = I.maTHIETBI :	Dòng này xác định thiết bị nào cần cập nhật. Nó so sánh maTHIETBI từ bảng THIETBI và bảng tạm INSERTED (bảng chứa dữ liệu vừa được chèn).
+- INSERTED : là bảng ảo do SQL Server tạo ra để lưu tạm các bản ghi mới được chèn – rất quan trọng trong trigger.
 
+=> Với mục đích : Cập nhật đếm số lần thiết bị được cấu hình.Tự động – nhanh – giảm lỗi do thao tác tay.Có thể dùng để cảnh báo thiết bị bị cấu hình quá nhiều lần (bất thường), phục vụ thống kê và báo cáo.
 
+4. Nhập dữ liệu vào bảng
 
+![image](https://github.com/user-attachments/assets/15057027-0928-40f0-a1a5-e983e0311833)
 
+Sau khi nhập dữ liệu cần thiết như maPHONG , maTHIETBI , maQTV ở các bảng kia thì em đã hoàn thành được dữ liệu của bảng CAUHINHMANG như trên. Khi test triger thì trường SoLanCauHinh ở bảng ThIETBI có sự thay đổi.
+- Trước đó bảng THIETBI đã nhập dữ liệu như sau:
+  
+![image](https://github.com/user-attachments/assets/4e48e562-834a-4696-8638-fc43e05f320b)
+
+- Số lần cấu hình trước đó em nhập , và sau khi cập nhập bảng CAUHINHMANG thì SoLanCauHinh ở bảng THIETBI tự động tăng lên thành:
+
+  ![image](https://github.com/user-attachments/assets/8e652a34-0991-4505-9e16-d60b1f572a78)
+
+  
 
 
 
