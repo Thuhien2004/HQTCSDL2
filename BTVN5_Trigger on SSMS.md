@@ -2,7 +2,6 @@ NGUYỄN THỊ THU HIỀN
 BÀI TẬP VỀ NHÀ 05, Môn Hệ quản trị csdl. DEADLINE: 23H59P59S - 23/4/2025
 SUBJECT: Trigger on mssql
 
-
 A. Trình bày lại đầu bài của đồ án PT&TKHT:
 1. Mô tả bài toán của đồ án PT&TKHT, 
    đưa ra yêu cầu của bài toán đó
